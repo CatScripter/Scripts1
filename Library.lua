@@ -952,7 +952,7 @@ function lib.Window(Name, Des, Image, DefBind)
                         if v:IsA("Frame") then
                             cathub_connect[#cathub_connect+1] = v.TextButton.MouseEnter:connect(function()
                     			game.TweenService:Create(v.TextLabel, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),{
-                    				TextColor3 = Color3.fromRGB(168, 59, 164)
+                    				TextColor3 = Color3.fromRGB(205, 205, 205)
                     			}):Play()
                     		end)
                     		cathub_connect[#cathub_connect+1] = v.TextButton.MouseLeave:connect(function()
@@ -1296,7 +1296,7 @@ function lib.Window(Name, Des, Image, DefBind)
                 Bar.TextSize = 14.000
                 
                 Frame_z.Parent = Bar
-                Frame_z.BackgroundColor3 = Color3.fromRGB(168, 59, 164)
+                Frame_z.BackgroundColor3 = Color3.fromRGB(205, 205, 205)
                 Frame_z.Position = UDim2.new(-0.0122330943, 0, 0, 0)
                 Frame_z.Size = UDim2.new(0, 166, 0, 10)
                 Frame_z.BorderSizePixel = 0
