@@ -205,7 +205,7 @@ function lib.Window(Name, Des, Image, DefBind)
     ImageLabel_2.Position = UDim2.new(0.0199999996, 0, 0, 0)
     ImageLabel_2.Size = UDim2.new(0, 41, 0, 44)
     ImageLabel_2.Image = "rbxassetid://"..tostring(Image)
-    ImageLabel_2.ImageColor3 = Color3.fromRGB(123, 56, 197)
+    ImageLabel_2.ImageColor3 = Color3.fromRGB(255, 255, 255)
     ImageLabel_2.ScaleType = Enum.ScaleType.Crop
     
     NameLibrary.Name = "NameLibrary"
@@ -216,7 +216,7 @@ function lib.Window(Name, Des, Image, DefBind)
     NameLibrary.Size = UDim2.new(0, 124, 0, 21)
     NameLibrary.FontFace = Font.new("rbxasset://fonts/families/JosefinSans.json", Enum.FontWeight.Bold)
     NameLibrary.Text = Name or "Cat Hub Revival"
-    NameLibrary.TextColor3 = Color3.fromRGB(123, 56, 197)
+    NameLibrary.TextColor3 = Color3.fromRGB(255, 255, 255)
     NameLibrary.TextSize = 14.000
     NameLibrary.TextWrapped = true
     NameLibrary.TextXAlignment = Enum.TextXAlignment.Left
@@ -229,7 +229,7 @@ function lib.Window(Name, Des, Image, DefBind)
     Creator.Size = UDim2.new(0, 131, 0, 14)
     Creator.FontFace = Font.new("rbxasset://fonts/families/JosefinSans.json", Enum.FontWeight.Bold)
     Creator.Text = Des or "Made By Senpaigmx"
-    Creator.TextColor3 = Color3.fromRGB(123, 56, 197)
+    Creator.TextColor3 = Color3.fromRGB(255, 255, 255)
     Creator.TextSize = 10.000
     Creator.TextWrapped = true
     Creator.TextXAlignment = Enum.TextXAlignment.Left
@@ -486,10 +486,10 @@ function lib.Window(Name, Des, Image, DefBind)
     	local image = Tab.ImageLabel
     	cathub_connect[#cathub_connect+1] = Tab.MouseEnter:Connect(function()
     		game.TweenService:Create(text, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),{
-    			TextColor3 = Color3.fromRGB(123, 56, 197)
+    			TextColor3 = Color3.fromRGB(255, 255, 255)
     		}):Play()
     		game.TweenService:Create(image, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),{
-    			ImageColor3 = Color3.fromRGB(123, 56, 197)
+    			ImageColor3 = Color3.fromRGB(255, 255, 255)
     		}):Play()
     	end)
     	cathub_connect[#cathub_connect+1] = Tab.MouseLeave:Connect(function()
@@ -640,7 +640,7 @@ function lib.Window(Name, Des, Image, DefBind)
                 function ButtonFun:Click()
                     if not lock then
                     	game.TweenService:Create(TextLabel_2, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),{
-                    		TextColor3 = Color3.fromRGB(123, 56, 197)
+                    		TextColor3 = Color3.fromRGB(255, 255, 255)
                     	}):Play()
                     	task.wait(.1)
                     	game.TweenService:Create(TextLabel_2, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),{
@@ -762,7 +762,7 @@ function lib.Window(Name, Des, Image, DefBind)
                         if Dt then
                             game.TweenService:Create(Frame_6, TweenInfo.new(0.05, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),{
                                 Position = UDim2.new(0.53, 0, 0.08, 0),
-                                BackgroundColor3 = Color3.fromRGB(123, 56, 197)
+                                BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                             }):Play()
                         else
                             game.TweenService:Create(Frame_6, TweenInfo.new(0.05, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),{
@@ -799,7 +799,7 @@ function lib.Window(Name, Des, Image, DefBind)
             	end)
             	cathub_connect[#cathub_connect+1] = Toggle.MouseEnter:Connect(function()
             		game.TweenService:Create(TextLabel_3, TweenInfo.new(0.18, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),{
-            			TextColor3 = Color3.fromRGB(123, 56, 197)
+            			TextColor3 = Color3.fromRGB(255, 255, 255)
             		}):Play()
             	end)
             	cathub_connect[#cathub_connect+1] = Toggle.MouseLeave:Connect(function()
@@ -1046,7 +1046,7 @@ function lib.Window(Name, Des, Image, DefBind)
             	end)
             	cathub_connect[#cathub_connect+1] = TextButton.MouseEnter:Connect(function()
             		game.TweenService:Create(LabelName, TweenInfo.new(0.18, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),{
-            			TextColor3 = Color3.fromRGB(123, 56, 197)
+            			TextColor3 = Color3.fromRGB(255, 255, 255)
             		}):Play()
             	end)
             	cathub_connect[#cathub_connect+1] = TextButton.MouseLeave:Connect(function()
