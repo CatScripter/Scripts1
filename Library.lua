@@ -271,7 +271,7 @@ function lib.Window(Name, Des, Image, DefBind)
     Bind.FontFace = Font.new("rbxasset://fonts/families/JosefinSans.json", Enum.FontWeight.Bold)
     Bind.Text = DefBind or "LeftAlt"
     Bind.TextTruncate = "AtEnd"
-    Bind.TextColor3 = Color3.fromRGB(124, 57, 198)
+    Bind.TextColor3 = Color3.fromRGB(255, 255, 255)
     Bind.TextSize = 14.000
     
     UICorner.Parent = Bind
