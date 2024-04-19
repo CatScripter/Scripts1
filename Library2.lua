@@ -215,7 +215,7 @@ function lib.Window(Name, Des, Image, DefBind)
     NameLibrary.Position = UDim2.new(0.272222221, 0, 0.0225603376, 0)
     NameLibrary.Size = UDim2.new(0, 124, 0, 21)
     NameLibrary.FontFace = Font.new("rbxasset://fonts/families/JosefinSans.json", Enum.FontWeight.Bold)
-    NameLibrary.Text = Name or "Cat Hub Revival"
+    NameLibrary.Text = Name or "Dougware"
     NameLibrary.TextColor3 = Color3.fromRGB(255, 255, 255)
     NameLibrary.TextSize = 14.000
     NameLibrary.TextWrapped = true
@@ -228,7 +228,7 @@ function lib.Window(Name, Des, Image, DefBind)
     Creator.Position = UDim2.new(0.272222221, 0, 0.0825603381, 0)
     Creator.Size = UDim2.new(0, 131, 0, 14)
     Creator.FontFace = Font.new("rbxasset://fonts/families/JosefinSans.json", Enum.FontWeight.Bold)
-    Creator.Text = Des or "Made By Senpaigmx"
+    Creator.Text = Des or "Made By Dougmandev"
     Creator.TextColor3 = Color3.fromRGB(255, 255, 255)
     Creator.TextSize = 10.000
     Creator.TextWrapped = true
