@@ -241,7 +241,7 @@ function lib.Window(Name, Des, Image, DefBind)
     Right.BorderSizePixel = 0
     Right.Position = UDim2.new(0.320675433, 0, -0.0016456095, 0)
     Right.Size = UDim2.new(0, 400, 0, 350)
-    Right.Image = "rbxassetid://17206218112"
+    Right.Image = "rbxassetid://17206533605"
     Right.ScaleType = Enum.ScaleType.Crop
     
     UICor = Instance.new("UICorner", Right)
